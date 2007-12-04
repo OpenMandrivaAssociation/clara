@@ -15,7 +15,7 @@ Patch0:		clara-optflags.patch.bz2
 License: 	GPL
 Group: 		Graphics
 Buildroot: 	%{_tmppath}/%{name}-%{version}-build
-BuildRequires:	XFree86-devel
+BuildRequires:	X11-devel
 
 %description
 Clara OCR is intended for large scale digitalization projects. 
