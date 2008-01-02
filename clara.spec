@@ -14,6 +14,7 @@ Source: 	http://www.geocities.com/claraocr/%{rc_name}.tar.bz2
 Patch0:		clara-optflags.patch.bz2
 License: 	GPL
 Group: 		Graphics
+Buildroot: 	%{_tmppath}/%{name}-%{version}-build
 BuildRequires:	X11-devel
 
 %description
