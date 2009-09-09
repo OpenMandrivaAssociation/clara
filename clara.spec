@@ -1,7 +1,7 @@
 %define name	clara
 %define version 0.20031214
 %define tarver  20031214
-%define release %mkrel 5
+%define release %mkrel 6
 %define rc_name	%{name}-%{tarver}
 
 Name: 		%{name}
