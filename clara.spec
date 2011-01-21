@@ -11,7 +11,7 @@ Release: 	%{release}
 Summary: 	An OCR (Optical Character Recognition) program
 URL: 		http://www.geocities.com/claraocr
 Source: 	http://www.geocities.com/claraocr/%{rc_name}.tar.bz2
-Patch0:		clara-optflags.patch.bz2
+Patch0:		clara-optflags.patch
 License: 	GPL
 Group: 		Graphics
 Buildroot: 	%{_tmppath}/%{name}-%{version}-build
