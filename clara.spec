@@ -12,10 +12,12 @@ Summary: 	An OCR (Optical Character Recognition) program
 URL: 		http://www.geocities.com/claraocr
 Source: 	http://www.geocities.com/claraocr/%{rc_name}.tar.bz2
 Patch0:		clara-optflags.patch
+Patch1:		clara-fix-str-fmt.patch
+Patch2:		clara-gcc44.patch
 License: 	GPL
 Group: 		Graphics
 Buildroot: 	%{_tmppath}/%{name}-%{version}-build
-BuildRequires:	X11-devel
+BuildRequires:	libx11-devel
 
 %description
 Clara OCR is intended for large scale digitalization projects. 
@@ -26,12 +28,14 @@ and we're approaching production level.
 %prep
 %setup -q -n %{rc_name}
 %patch0 -p1 -b .makefile
+%patch1 -p0 -b .str
+%patch2 -p0 -b .gcc
 %if %_lib == lib64
-sed -i 's|LIBPATH = -L/usr/X11R6/lib|LIBPATH = -L/usr/X11R6/lib64|' Makefile
+sed -i 's|LIBPATH = -L/usr/X11R6/lib|LIBPATH = |' Makefile
 %endif
 
 %build
-%make
+%make LDFLAGS="%ldflags"
 %make doc
 
 %install
