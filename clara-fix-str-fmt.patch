@@ -1,0 +1,31 @@
+--- clara.c.str	2011-01-21 15:09:22.000000000 +0100
++++ clara.c	2011-01-21 15:09:43.000000000 +0100
+@@ -2346,7 +2346,7 @@
+                 if ((l+1+topb+1) > bsz)
+                     argb = c_realloc(argb,(bsz+=l+256),NULL);
+                 disp[largc] = topb + 1;
+-                sprintf(argb+topb+1,a);
++                sprintf(argb+topb+1,"%s",a);
+                 topb += l+1;
+                 ++largc;
+             }
+--- cml.c.str	2011-01-21 15:08:50.000000000 +0100
++++ cml.c	2011-01-21 15:09:14.000000000 +0100
+@@ -1299,7 +1299,7 @@
+             if (f != NULL)
+                 fatal(FD,"unexpected token at line %d of file %s",DLINE,f);
+             else {
+-                printf(text);
++                printf("%s",text);
+                 fatal(FD,"unexpected token found on internally generated act");
+             }
+         }
+@@ -2087,7 +2087,7 @@
+         dict_sel(&e);
+         dump_dict(1,NULL);
+         while (dump_dict(0,NULL));
+-        printf(text);
++        printf("%s",text);
+     }
+     
+     /* store with backup */
