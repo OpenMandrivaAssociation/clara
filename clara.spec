@@ -56,3 +56,50 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/clara*
 %{_bindir}/*
 
+
+
+%changelog
+* Fri Jan 21 2011 Funda Wang <fwang@mandriva.org> 0.20031214-6mdv2011.0
++ Revision: 632028
+- fix build
+- bunzip2 the patch
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0.20031214-3mdv2008.1
++ Revision: 140694
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - buildrequires X11-devel instead of XFree86-devel
+    - import clara
+
+
+* Fri Jun 02 2006 Stew Benedict <sbenedict@mandriva.com> 0.20031214-3mdv2007.0
+- rebuild, new url
+
+* Mon May  9 2005 Stew Benedict <sbenedict@mandriva.com> 0.20031214-2mdk
+- fix x86_64 build
+
+* Fri Apr  2 2004 Stew Benedict <sbenedict@mandrakesoft.com> 0.20031214-1mdk
+- new snapshot, rework patch0
+
+* Mon Mar 10 2003 Marcel Pol <mpol@gmx.net> 0.9.9-3mdk
+- buildreq: XFree86-devel
+
+* Mon Dec 30 2002 Stew Benedict <sbenedict@mandrakesoft.com> 0.9.9-2mdk
+- rebuild for new glibc/rpm, add %%clean section for rpmlint
+
+* Tue May 07 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.9.9-1mdk
+- 0.9.9
+- refresh patch0
+
+* Thu Nov 29 2001 Yves Duret <yduret@mandrakesoft.com> 0.9.8-1mdk
+- version 0.9.8
+- fix typo in url
+
+* Mon Jul 23 2001 Yves Duret <yduret@mandrakesoft.com> 0.9.7-1mdk
+- first MandrakeSoft package
