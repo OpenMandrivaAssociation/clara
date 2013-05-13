@@ -17,7 +17,7 @@ Patch2:		clara-gcc44.patch
 License: 	GPL
 Group: 		Graphics
 Buildroot: 	%{_tmppath}/%{name}-%{version}-build
-BuildRequires:	libx11-devel
+BuildRequires:	pkgconfig(x11)
 
 %description
 Clara OCR is intended for large scale digitalization projects. 
