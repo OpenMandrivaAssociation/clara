@@ -1,7 +1,7 @@
 %define name	clara
 %define version 0.20031214
 %define tarver  20031214
-%define release %mkrel 6
+%define release  7
 %define rc_name	%{name}-%{tarver}
 
 Name: 		%{name}
@@ -16,7 +16,6 @@ Patch1:		clara-fix-str-fmt.patch
 Patch2:		clara-gcc44.patch
 License: 	GPL
 Group: 		Graphics
-Buildroot: 	%{_tmppath}/%{name}-%{version}-build
 BuildRequires:	pkgconfig(x11)
 
 %description
