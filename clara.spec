@@ -9,7 +9,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Summary: 	An OCR (Optical Character Recognition) program
-URL: 		http://www.geocities.com/claraocr
+URL: 		https://www.geocities.com/claraocr
 Source: 	http://www.geocities.com/claraocr/%{rc_name}.tar.bz2
 Patch0:		clara-optflags.patch
 Patch1:		clara-fix-str-fmt.patch
