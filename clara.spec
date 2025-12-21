@@ -16,6 +16,7 @@ Patch1:		clara-fix-str-fmt.patch
 Patch2:		clara-gcc44.patch
 License: 	GPL
 Group: 		Graphics
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 
 %description
